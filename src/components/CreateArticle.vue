@@ -26,7 +26,11 @@ export default {
   methods: {
     saveArticle() {
       this.$axios.post("/articles", this.article).then(res => {
-        console.log(res.data)
+        this.$message({
+          message: '文章创建成功~',
+          type: 'success'
+        });
+        this.$router.push('/article/index')
       })
       
       console.log(this.article);
