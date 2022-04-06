@@ -1,4 +1,4 @@
-import {ElInput,
+import {ElInput,ElMessageBox,ElMessage,
   ElTable,ElTableColumn,ElForm,ElFormItem,ElButton,ElContainer,ElHeader,ElAside,ElMenu,ElSubmenu,ElMenuItem,ElMain} from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
 
@@ -16,5 +16,7 @@ export default (app) => {
   app.use(ElTable)
   app.use(ElTableColumn)
   app.use(ElInput)
+  app.use(ElMessageBox)
+  app.use(ElMessage)
 
 }
