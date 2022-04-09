@@ -3,13 +3,13 @@
     <el-header>
       <div>
         <img src="" alt="">
-        <span>电商后台管理系统</span>
+        <span>博客后台管理系统</span>
       </div>
-      <el-button type="info" @click="logout">退出</el-button>
+      <!-- <el-button type="info" @click="logout">退出</el-button> -->
     </el-header>
     <el-container>
       <el-aside width="200px">
-        <el-menu router="" default-openeds="['1']"
+        <el-menu router="" default-active="1"
           background-color="#333744" text-color="#fff" active-text-color="#ffd04b">
           <el-submenu index="1">
             <template v-slot:title>
@@ -38,11 +38,11 @@
   export default {
     name: 'App',
     methods: {
-      logout() {
-        // 清空token
-        window.sessionStorage.clear();
-        this.$router.push('/login');
-      }
+      // logout() {
+      //   // 清空token
+      //   window.sessionStorage.clear();
+      //   this.$router.push('/login');
+      // }
     }
   }
 </script>

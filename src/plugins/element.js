@@ -1,5 +1,5 @@
 import {ElInput,ElMessageBox,ElMessage,
-  ElTable,ElTableColumn,ElForm,ElFormItem,ElButton,ElContainer,ElHeader,ElAside,ElMenu,ElSubmenu,ElMenuItem,ElMain} from 'element-plus'
+  ElTable,ElTableColumn,ElForm,ElFormItem,ElButton,ElContainer,ElHeader,ElAside,ElMenu,ElSubmenu,ElMenuItem,ElMenuItemGroup,ElMain} from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
 
 export default (app) => {
@@ -18,5 +18,6 @@ export default (app) => {
   app.use(ElInput)
   app.use(ElMessageBox)
   app.use(ElMessage)
+  app.use(ElMenuItemGroup)
 
 }
